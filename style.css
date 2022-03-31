@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+}
+
+.page {
+  display: flex;
+}
+
+.bg-side {
+  background-image: url("surface-VhOAxpxQMWI-unsplash.jpg");
+  background-size: contain;
+  width: 684px; 
+  height: 1025px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+}
+
+.logo-box {
+  width:684px;
+  height: 100px;
+  background-color: black;
+  opacity: .6;
+  margin-bottom: 600px;
+}
+
+.image-credit {
+  align-self: center;
+  position: relative;
+  bottom: 0px;
+}
+
+.form-side {
+  background-color: rgb(240, 233, 233);
+}
+
+.form-top, .form-box {
+  height: 300px;
+  display: flex;
+}
+
+.form-top {
+  justify-content: flex-end;
+  flex-direction: column;
+  font-size: 1.6rem;
+  margin-left: 3rem;
+  margin-right: 17rem;
+  margin-bottom: 1rem;
+}
+
+.want {
+ height: 20px;
+ margin-bottom: 3rem;
+ margin-top: 1rem;
+}
+
+.form-middle {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.lets-do-this {
+  font-size: 1.6rem;
+  margin-left: 3rem;
+}
+
+.form-box {
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-around;
+  margin-left: 3rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+
+  padding-right: 6rem;
+}
