@@ -5,63 +5,68 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up Form</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/script.js"></script>
 </head>
 <body>
   <div class="page"> <!--main page div-->
-    <div class="bg-side"> <!--Background image-->
-      <div class="logo-box"> <!-- Logo and text-->
-        <div></div> <!-- Logo-->
-        <div>Romano Services</div> <!-- Logo text-->
+    <div class="bg-side"> <img src="assets/surface-VhOAxpxQMWI-unsplash.jpg"><!--Background image-->
+      <div class="logo-text-box"> <!-- Logo and text-->
+        <!--<div class="logo-box-box">-->
+          <div class="logo-box">
+            <img class="logo" src="assets/odin-lined.png"></div> <!-- Logo-->
+          <div class="top">TOP</div> <!-- Logo text-->
+        <!--</div>-->
       </div>
-      <div class="image-credit">Photo by <a href="https://unsplash.com/@surface">Surface</a> on <a href="https://unsplash.com/">Unsplash</a></div> <!-- Image credit-->
+      <div class="image-credit">Photo by <a class="credit" href="https://unsplash.com/@surface">Surface</a> on <a class="credit" href="https://unsplash.com/">Unsplash</a></div> 
     </div>
     <div class="form-side"> <!-- Form side of the page-->
       <div class="form-top"> <!-- Top third-->
         <div>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</div>
         <div>Sign up <em>now</em> to get started.</div>
-        <div class="want">You <em>know</em> you want to.</div> <!-- You know you want to text -->
+        <div class="want">You <em>know</em> you want to.</div> 
       </div>
       <div class="form-middle"> <!-- Middle section-->
-        <div class="lets-do-this">Let's do this!</div> <!-- "Let's do this!"-->
-        <div class="form-box">
-          <form action="" method="post">
+        <div class="lets-do-this">Let's do this!</div> 
+        <fieldset class="form-box">
+          <form action="" method="post" id="form">
             <div class="form-row">
               <div class="input-box">
                 <label for="firstName">First Name:</label>
-                <input type="text" id="firstName">
+                <input class="text-box" type="text" id="firstName" name="firstName">
               </div>
               <div class="input-box">
                 <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName">
+                <input class="text-box" type="text" id="lastName" name="lastName">
               </div>
             </div>
             <div class="form-row">
               <div class="input-box">
-                <label for="emailAddress">Email Address:</label>
-                <input type="email" id="emailAddress">
+                <label for="emailAddress">*Email Address:</label>
+                <input class="text-box" type="email" id="emailAddress" name="email" required>
               </div>
               <div class="input-box">
                 <label for="phone">Phone Number:</label>
-                <input type="number" id="phone">
+                <input class="text-box" type="tel" id="phone" name="phone" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$">
               </div>
             </div>
             <div class="form-row">
               <div class="input-box">
-                <label for="password">Password:</label>
-                <input type="text" id="password">
+                <label for="password">*Password:</label>
+                <input class="text-box" type="password" id="password" name="password" minlength="8" onkeyup="confirm_password();" required>
               </div>            
               <div class="input-box">
-                <label for="confirm">Confirm Password:</label>
-                <input type="text" id="confirm">
+                <label for="confirm">*Confirm Password:</label>
+                <input class="text-box" type="password" id="confirm" name="confirm" onkeyup="confirm_password();" required>
+                <div class="password-message" id="password-message"></div>
               </div>
             </div>
+            <div><button class="account-button" type="submit" id="submit-button">Create Account</button></div>
           </form>
-        </div>
+        </fieldset>
       </div>
       <div class="form-bottom"> <!-- Bottom third-->
-        <div><button></button></div> <!-- Create account button -->
-        <div>Already have an account? Log in</div> <!-- Already have account -->
+        <div class="bottom-text">Already have an account? <a  class="account" href="https://www.theodinproject.com/">Log in</a></div>
       </div>
     </div>
   </div>
