@@ -1,0 +1,210 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url(../assets/Norse-Bold.otf);
+}
+
+body {
+  margin: 0;
+}
+
+:focus {
+  outline:none;
+  box-shadow: 0 0 0 3px rgb(240, 233, 233);
+}
+
+.page {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 1920px;
+  align-content: stretch;
+}
+
+.bg-side {
+  background-size: contain;
+  width: 684px; 
+  height: 1025px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+}
+
+.logo-text-box {
+  width:684px;
+  height: 175px;
+  background-color: black;
+  opacity: .6;
+  margin-bottom: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+}
+
+.logo-box {
+  height: 150px;
+  width: 175px;
+  display: flex;
+  align-self: center;
+}
+
+.logo {
+  max-height: 100%;
+  width: auto;
+}
+
+.top {
+  font-family: Norse-Bold, sans-serif;
+  font-size: 12rem;
+  display: flex;
+  align-items: center;
+}
+
+.image-credit {
+  align-self: center;
+  position: absolute;
+  bottom: 0px;
+}
+
+a.credit:link {
+  text-decoration: none;
+  color:white;
+}
+
+a.credit:visited {
+  color:white;
+}
+
+a.credit:hover {
+  text-decoration: underline;
+}
+
+.form-side {
+  background-color: rgb(240, 233, 233);
+  width: clamp(684px, 64%, 64%);
+
+
+}
+
+.form-top, .form-box {
+  height: 300px;
+  display: flex;
+}
+
+.form-top {
+  justify-content: flex-end;
+  flex-direction: column;
+  font-size: 1.6rem;
+  padding-left: 3rem;
+  padding-right: 17rem;
+  padding-bottom: 1rem;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: solid;
+  border-color: rgba(223, 216, 216, 0.2);
+}
+
+.want {
+ height: 20px;
+ margin-bottom: 3rem;
+ margin-top: 1rem;
+}
+
+.form-middle {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  box-shadow: 2px 5px 5px rgba(223, 216, 216);
+}
+
+.lets-do-this {
+  font-size: 1.6rem;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.form-box {
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-around;
+  margin-left: 3rem;
+  border: none;
+  padding: 0px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  padding-right: 3rem;
+  position: relative;
+}
+
+.text-box {
+  padding: 5px;
+  border-radius: 20px;
+  border-style: solid;
+
+}
+
+.text-box:invalid:focus {
+  background-color: rgb(240, 233, 233);
+}
+
+.password-message {
+  position: absolute;
+  top: 4rem;
+}
+
+.form-bottom {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.account-button {
+  height: 3rem;
+  width: 12rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  background-color: saddlebrown;
+  color: white;
+  border-style: none;
+  border-radius: 20px;
+}
+
+.account-button:active {
+  border: solid;
+  border-color: rgba(139, 69, 19, 0.877);
+  background-color: rgb(104, 52, 16);
+}
+
+a.account:link {
+  text-decoration: none;
+  color: saddlebrown;
+}
+
+a.account:visited {
+  color: saddlebrown;
+}
+
+a.account:hover {
+  text-decoration: underline;
+}
+
+.bottom-text {
+  margin-top: 8rem;
+  margin-left:1rem;
+}
